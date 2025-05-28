@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "tsx --env-file .env watch src/http/server.ts",
+    "dev": "tsx watch --env-file .env  src/http/server.ts",
+    "studio": "npx drizzle-kit studio",
     "seed": "tsx --env-file .env src/db/seed.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -23,6 +24,7 @@
     "dayjs": "^1.11.13",
     "drizzle-orm": "^0.43.1",
     "fastify": "^5.3.3",
+    "fastify-type-provider-zod": "^4.0.2",
     "postgres": "^3.4.6",
     "zod": "^3.25.12"
   }
